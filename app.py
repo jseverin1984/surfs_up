@@ -78,9 +78,9 @@ def stats(start=None, end=None):
     temps = list(np.ravel(results))
     return jsonify(temps=temps)
 
-@app.route('/api/v1.0/newpage')
-def newwebsite():
-    return redirect('https://www.amazon.com/')
+# @app.route('/api/v1.0/newpage')
+# def newwebsite():
+#     return redirect('https://www.amazon.com/')
 
 if __name__ == "__main__":
     app.run()
